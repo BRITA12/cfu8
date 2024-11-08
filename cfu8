@@ -1,0 +1,27 @@
+#10/15/24
+#1-2period
+#Brithanysanchez
+#cfu#8
+'''GrubHub Program - First ask the user if they ordered delivery
+
+Version 1
+If the user responds “yes” - say great!If the user responds with anything else say: “NO?! So who is cooking?”
+Version 2 - Builds on ver1If the user responds “yes….
+- Ask the user the cost of the food ordered
+-Ask the user how many people are splitting the order
+- Calculate and print out the cost per person
+Ex: “The cost per person is $2.50'''
+
+
+ordered_delivery = input("Did you order delivery? (yes/no): ")
+if ordered_delivery == "yes":
+    print("Great!")
+    cost_of_food = float(input("Enter the cost of the food ordered: $"))
+    people_splitting = int(input("How many people are splitting the order? "))
+     if people_splitting > 0:
+        cost_per_person = cost_of_food / people_splitting
+        print(f"The cost per person is ${cost_per_person:.2f}")
+    else:
+        print("Number of people must be at least 1.")
+else:
+    print("NO?! So who is cooking?")
